@@ -21,7 +21,7 @@ const Footer = () => {
 
   return (
     <footer className="flex justify-between border-t pt-6 border-neutral-800">
-      <div className="text-sm">
+      <div className="text-xs md:text-sm">
         <p className="text-gray-300">Crafted with love, Poppins-interface.</p>
       </div>
       <div className="flex space-x-8">
