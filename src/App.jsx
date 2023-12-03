@@ -13,7 +13,7 @@ const App = () => {
         <Hero />
       </div>
       {/* <Skills /> */}
-      <div className="max-w-6xl mx-auto px-8 py-6">
+      <div className="max-w-6xl mx-auto px-3 md:px-6 lg:px-8 py-6">
         <WhatIDo />
         <GetInTouch />
         <Footer />
