@@ -5,7 +5,7 @@ const WhatIDo = () => {
       ido: "Crafting web interfaces that are not only responsive, accessible, and intuitive but also visually appealing and user-friendly.",
     },
     {
-      what: "System Tools",
+      what: "System Dev",
       ido: "Developing system tools that go beyond being just fast and reliable, ensuring they are also highly efficient and seamless.",
     },
     {
@@ -28,7 +28,7 @@ const WhatIDo = () => {
           <div key={index} className="hover:animate-pulse">
             <div className="bg-neutral-900 border border-neutral-800 px-6 pt-48 pb-8 min-h-full">
               <div className="text-lg  break-words">{item.what}</div>
-              <div className="text-xs md:text-sm text-gray-300 pt-6">
+              <div className="text-xs md:text-sm font-light text-gray-300 pt-6">
                 {item.ido}
               </div>
             </div>

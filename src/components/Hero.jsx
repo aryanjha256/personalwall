@@ -1,4 +1,5 @@
 import profile from "../assets/profile.jpeg";
+import { GiArrowWings } from "react-icons/gi";
 
 const Hero = () => {
   return (
@@ -11,9 +12,16 @@ const Hero = () => {
         Embracing the power of Python, JavaScript, and Rust.
       </div>
       <div className="py-8 hover:animate-pulse ">
-        <div className=" bg-neutral-900 border border-neutral-800 text-gray-300 px-12 py-4">
-          Latest Writings
-        </div>
+        <a
+          href="https://nebulog.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className=" bg-neutral-900 border border-neutral-800 text-gray-300 px-12 py-4">
+            Latest Writings
+            <GiArrowWings className="inline-block ml-2" />
+          </div>
+        </a>
       </div>
     </div>
   );

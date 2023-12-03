@@ -6,9 +6,11 @@ const GetInTouch = () => {
           Have an idea about something.
         </div>
         <div className="py-8 hover:animate-pulse ">
-          <div className=" bg-neutral-900 border border-neutral-800 text-gray-300 px-12 py-4">
-            Get in touch
-          </div>
+          <a href="mailto:aryanjha256@gmail.com">
+            <div className=" bg-neutral-900 border border-neutral-800 text-gray-300 px-12 py-4">
+              Get in touch
+            </div>
+          </a>
         </div>
       </div>
     </div>
