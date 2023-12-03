@@ -3,6 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": {
+    "name": "Aryan Kumar",
+    "url": "https://github.com/aryanjha256"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
