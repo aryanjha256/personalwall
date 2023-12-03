@@ -24,7 +24,7 @@ const App = () => {
   return (
     <div className="bg-neutral-950 min-h-screen text-neutral-200">
       <div className="absolute">
-        {renderDots()}
+        {/* {renderDots()} */}
         {/* <div className="relative bg-neutral-400 p-[2px] opacity-40 rounded-full inline-block" /> */}
       </div>
       <div className="max-w-6xl mx-auto px-3 md:px-6 lg:px-8 py-6">
