@@ -1,3 +1,5 @@
+import { IoMailSharp } from "react-icons/io5";
+
 const GetInTouch = () => {
   return (
     <div className="mt-24 py-24 border-t border-neutral-800">
@@ -9,6 +11,7 @@ const GetInTouch = () => {
           <a href="mailto:aryanjha256@gmail.com">
             <div className=" bg-neutral-900 border border-neutral-800 text-gray-300 px-12 py-4">
               Get in touch
+              <IoMailSharp className="inline-block ml-4" />
             </div>
           </a>
         </div>
