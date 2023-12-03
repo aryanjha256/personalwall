@@ -37,10 +37,10 @@ const WhatIDo = () => {
       <div className="grid gap-2 lg:gap-4 grid-cols-2 lg:grid-cols-4">
         {whatIDo.map((item, index) => (
           <div key={index} className="hover:animate-pulse">
-            <div className="bg-neutral-900 border border-neutral-800 px-6 pt-48 pb-8 min-h-full">
+            <div className="bg-neutral-900 border border-neutral-800 px-3 md:px-6 pt-32 md:pt-48 pb-8 min-h-full">
               <div className="text-4xl text-center pb-4">{item.icon}</div>
               <div className="text-lg  break-words">{item.what}</div>
-              <div className="text-xs md:text-sm font-light text-gray-300 pt-6">
+              <div className="text-xs md:text-sm font-light text-gray-300 pt-4 md:pt-6">
                 {item.ido}
               </div>
             </div>
