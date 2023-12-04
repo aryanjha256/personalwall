@@ -11,7 +11,7 @@ const GetInTouch = () => {
           <a href="mailto:aryanjha256@gmail.com">
             <div className=" bg-neutral-900 border border-neutral-800 text-gray-300 px-12 py-4">
               Get in touch
-              <IoMailSharp className="inline-block ml-4" />
+              <IoMailSharp className="inline-block ml-4 md:text-lg" />
             </div>
           </a>
         </div>

@@ -5,17 +5,17 @@ const Footer = () => {
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/thearyankumar/",
-      icon: <FaLinkedin />,
+      icon: <FaLinkedin className="text-lg" />,
     },
     {
       name: "Github",
       url: "https://github.com/aryanjha256",
-      icon: <FaGithub />,
+      icon: <FaGithub className="text-lg" />,
     },
     {
       name: "Instagram",
       url: "https://www.instagram.com/aryan.k.jha/",
-      icon: <FaInstagram />,
+      icon: <FaInstagram className="text-lg" />,
     },
   ];
 

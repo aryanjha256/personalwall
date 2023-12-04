@@ -6,17 +6,17 @@ const Header = () => {
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/thearyankumar/",
-      icon: <FaLinkedin />,
+      icon: <FaLinkedin className="text-lg" />,
     },
     {
       name: "Github",
       url: "https://github.com/aryanjha256",
-      icon: <FaGithub />,
+      icon: <FaGithub className="text-lg" />,
     },
     {
       name: "Instagram",
       url: "https://www.instagram.com/aryan.k.jha/",
-      icon: <FaInstagram />,
+      icon: <FaInstagram className="text-lg" />,
     },
   ];
 
@@ -25,7 +25,7 @@ const Header = () => {
       <div className="text-sm">
         <a href="mailto:aryanjha256@gmail.com">
           Say, Hello
-          <IoMailSharp className="inline-block ml-4" />
+          <IoMailSharp className="md:text-lg inline-block ml-4" />
         </a>
       </div>
       <div className="flex space-x-8">
