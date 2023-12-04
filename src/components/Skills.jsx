@@ -1,4 +1,34 @@
-import { skills } from "../data/skills";
+import React from "react";
+
+import {
+  DiReact,
+  DiPython,
+  DiNodejs,
+  DiAws,
+  DiRedhat,
+  DiGit,
+  DiNginx,
+  DiRust,
+  DiDjango,
+  DiDocker,
+  DiFirebase,
+  DiJenkins,
+} from "react-icons/di";
+
+const skills = [
+  <DiReact />,
+  <DiPython />,
+  <DiNodejs />,
+  <DiAws />,
+  <DiRedhat />,
+  <DiGit />,
+  <DiNginx />,
+  <DiRust />,
+  <DiDjango />,
+  <DiDocker />,
+  <DiFirebase />,
+  <DiJenkins />,
+];
 
 const Skills = () => {
   return (
@@ -6,7 +36,9 @@ const Skills = () => {
       <div className="flex items-center justify-evenly overflow-clip whitespace-nowrap">
         {skills.map((skill, index) => (
           <div key={index} className="inline-block mx-8 md:mx-10 lg:mx-12">
-            {skill.icon}
+            {React.cloneElement(skill, {
+              className: "text-6xl text-neutral-100",
+            })}
           </div>
         ))}
       </div>

@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "name": "EcoHub",
+      "description": "A platform for connecting eco-conscious individuals and promoting sustainable practices.",
+      "repo": "https://github.com/aryanjha256/ecohub",
+      "website": "https://ecohub.com"
+    },
+    {
+      "name": "FoodieFinder",
+      "description": "An app that helps users discover new restaurants and cuisines based on their preferences.",
+      "repo": "https://github.com/aryanjha256/foodiefinder",
+      "website": "https://foodiefinder.com"
+    },
+    {
+      "name": "CodeCrafters",
+      "description": "A coding challenge platform that allows developers to improve their skills through interactive coding exercises.",
+      "repo": "https://github.com/aryanjha256/codecrafters",
+      "website": "https://codecrafters.com"
+    },
+    {
+      "name": "TravelTracker",
+      "description": "A travel planning app that helps users organize their itineraries, track expenses, and share experiences.",
+      "repo": "https://github.com/aryanjha256/traveltracker",
+      "website": "https://traveltracker.com"
+    }
+  ]
+}
