@@ -37,7 +37,12 @@ const Header = () => {
               </a>
             </div>
             <div className="text-sm text-gray-300 hover:text-neutral-300 md:hidden ">
-              <a href={social.url} target="_blank" rel="noopener noreferrer">
+              <a
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Link to Aryan's ${social.name}`}
+              >
                 {social.icon}
               </a>
             </div>
