@@ -18,13 +18,13 @@ To install and set up the project, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/aryanjha256/personal-wall.git
+   git clone https://github.com/aryanjha256/personalwall.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd personal-wall
+   cd personalwall
    ```
 
 3. Install dependencies:
