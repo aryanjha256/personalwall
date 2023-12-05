@@ -33,14 +33,25 @@ const skills = [
 const Skills = () => {
   return (
     <div className="bg-neutral-900 py-12 border-y border-neutral-800 mt-6">
-      <div className="flex items-center overflow-hidden">
-        {skills.map((skill, index) => (
-          <div key={index} className="inline-block mx-8 md:mx-10 lg:mx-12">
-            {React.cloneElement(skill, {
-              className: "text-6xl text-neutral-100",
-            })}
-          </div>
-        ))}
+      <div className=" overflow-hidden whitespace-nowrap">
+        <div className=" inline-block animate-scroll">
+          {skills.map((skill, index) => (
+            <div key={index} className="inline-block mx-8 md:mx-10 lg:mx-12">
+              {React.cloneElement(skill, {
+                className: "text-6xl text-neutral-100",
+              })}
+            </div>
+          ))}
+        </div>
+        <div className=" inline-block animate-scroll">
+          {skills.map((skill, index) => (
+            <div key={index} className="inline-block mx-8 md:mx-10 lg:mx-12">
+              {React.cloneElement(skill, {
+                className: "text-6xl text-neutral-100",
+              })}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
