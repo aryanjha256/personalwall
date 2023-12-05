@@ -9,7 +9,7 @@ import Glow from "./components/Glow";
 const App = () => {
   return (
     <div className="bg-neutral-950 min-h-screen text-neutral-200">
-      {/* <Glow /> */}
+      <Glow />
       <div className="max-w-6xl mx-auto px-3 md:px-6 lg:px-8 py-6">
         <Header />
         <Hero />
