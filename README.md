@@ -15,16 +15,35 @@ Personal Wall is a portfolio showcase project built with React and Vite. It prov
 
 To install and set up the project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/aryanjha256/personal-wall.git`
-2. Navigate to the project directory: `cd personal-wall`
-3. Install dependencies: `pnpm install`
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/aryanjha256/personal-wall.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd personal-wall
+   ```
+
+3. Install dependencies:
+   ```bash
+   pnpm install
+   ```
 
 ## Usage
 
 To use the Personal Wall project, follow these steps:
 
-1. Start the development server: `npm run dev`
-2. Open your browser and navigate to `http://localhost:5173`
+1. Start the development server:
+
+   ```bash
+   pnpm run dev
+   ```
+
+2. Open your browser and navigate to [http://localhost:5173](http://localhost:5173)
+
 <!-- 3. Customize the portfolio by editing the `src/data/portfolio.js` file with your own projects and information. -->
 
 ## Contributing
@@ -32,11 +51,26 @@ To use the Personal Wall project, follow these steps:
 Contributions to Personal Wall are welcome! If you have any ideas for improvements or bug fixes, please submit a pull request. Follow these steps to contribute:
 
 1. Fork the repository
-2. Create a new branch: `git checkout -b feature/your-feature-name`
-3. Make your changes and commit them: `git commit -m 'Add your commit message'`
-4. Push your changes to the branch: `git push origin feature/your-feature-name`
+2. Create a new branch:
+
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+3. Make your changes and commit them:
+
+   ```bash
+   git commit -m 'Add your commit message'
+   ```
+
+4. Push your changes to the branch:
+
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
 5. Open a pull request on the main repository
 
 ## License
 
-Personal Wall is licensed under the [MIT License](LICENSE).
+Personal Wall is licensed under the [MIT License](https://opensource.org/licenses/MIT).
