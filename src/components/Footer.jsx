@@ -1,4 +1,5 @@
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   const socials = [
@@ -20,7 +21,12 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="flex justify-between border-t pt-6 border-neutral-800">
+    <motion.footer
+      initial={{ scaleX: 0, opacity: 0 }}
+      whileInView={{ scaleX: 1, opacity: 1 }}
+      transition={{ duration: 0.4, stiffness: 120 }}
+      className="flex justify-between border-t pt-6 border-neutral-800"
+    >
       <div className="text-sm">
         <p className="text-gray-300 md:hidden">Crafted with Love.</p>
         <p className="text-gray-300 hidden md:block">
@@ -48,7 +54,7 @@ const Footer = () => {
           </div>
         ))}
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

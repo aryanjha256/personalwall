@@ -8,7 +8,7 @@ const Hero = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 3 }}
+        transition={{ duration: 2 }}
         className="text-3xl text-center md:text-4xl lg:text-5xl max-w-3xl"
       >
         Embracing the power of Python, JavaScript, and Rust.
