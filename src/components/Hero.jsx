@@ -5,7 +5,12 @@ const Hero = () => {
   return (
     <div className="flex flex-col items-center pt-20 lg:pt-24">
       <div className="py-8 text-sm text-gray-300">Hi, I'm Aryan 👋</div>
-      <motion.div className="text-3xl text-center md:text-4xl lg:text-5xl max-w-3xl">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 3 }}
+        className="text-3xl text-center md:text-4xl lg:text-5xl max-w-3xl"
+      >
         Embracing the power of Python, JavaScript, and Rust.
       </motion.div>
       <div className="py-8 hover:animate-pulse ">
