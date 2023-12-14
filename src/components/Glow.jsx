@@ -7,6 +7,7 @@ const Glow = () => {
   useEffect(() => {
     const handleMouseMove = (event) => {
       setMousePosition({ x: event.clientX, y: event.clientY });
+      setIsMouseInViewport(true);
     };
 
     const handleMouseEnter = () => {
