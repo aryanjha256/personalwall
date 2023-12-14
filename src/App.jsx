@@ -5,6 +5,7 @@ import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import GetInTouch from "./components/GetInTouch";
 import Glow from "./components/Glow";
+import Emojis from "./components/Emojis";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <div className="max-w-6xl mx-auto px-3 md:px-6 lg:px-8 py-6">
         <Header />
         <Hero />
+        {/* <Emojis /> */}
       </div>
       <Skills />
       <div className="max-w-6xl mx-auto px-3 md:px-6 lg:px-8 py-6">
