@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useSprings, animated } from "@react-spring/web";
 
 const Emojis = () => {
   const emojis = [
@@ -54,19 +55,25 @@ const Emojis = () => {
     return () => clearInterval(intervalId);
   }, [emojis]);
 
-  const displayedEmojis = [];
-
-  for (let i = 0; i < emojisToDisplay; i++) {
-    const emojiIndex = (startEmojiIndex + i) % emojis.length;
-    displayedEmojis.push(emojis[emojiIndex]);
-  }
+  const springs = useSprings(
+    emojisToDisplay,
+    emojis.map((_, i) => ({
+      from: { opacity: 0, transform: "translateX(100%)" },
+      to: async (next, cancel) => {
+        await next({ opacity: 1, transform: "translateX(0)" });
+        await next({ opacity: 0, transform: "translateX(-100%)" });
+      },
+      reset: true,
+      reverse: i % 2 === 0, // reverse every other emoji
+    }))
+  );
 
   return (
     <div className="flex items-center justify-around">
-      {displayedEmojis.map((emoji, index) => (
-        <span key={index} className="text-4xl">
-          {emoji}
-        </span>
+      {springs.map((style, index) => (
+        <animated.span key={index} style={style} className="text-4xl">
+          {emojis[(startEmojiIndex + index) % emojis.length]}
+        </animated.span>
       ))}
     </div>
   );
