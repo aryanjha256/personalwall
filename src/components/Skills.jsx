@@ -79,10 +79,8 @@ const Skills = () => {
       from: { opacity: 0, transform: "translateX(20%)" },
       to: async (next, cancel) => {
         await next({ opacity: 1, transform: "translateX(0)" });
-        // await next({ opacity: 0, transform: "translateX(-20%)" });
       },
       reset: true,
-      // reverse: i % 2 === 0, // reverse every other emoji
     }))
   );
   return (
