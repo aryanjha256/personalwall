@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react";
 
 import {
   DiReact,
@@ -31,24 +31,33 @@ const skills = [
 ];
 
 const Skills = () => {
+  const [startIndex, setStartIndex] = useState(0);
+  const [visibleIcons, setVisibleIcons] = useState(
+    skills.slice(startIndex, startIndex + 4)
+  );
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setStartIndex((prevIndex) => (prevIndex + 4) % skills.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    setVisibleIcons(skills.slice(startIndex, startIndex + 4));
+  }, [startIndex]);
+
   return (
     <div className="bg-neutral-900 py-12 border-y border-neutral-800 mt-6">
-      <div className=" overflow-hidden whitespace-nowrap">
-        <div className=" inline-block animate-scroll">
-          {skills.map((skill, index) => (
-            <div key={index} className="inline-block mx-8 md:mx-10 lg:mx-12">
-              {React.cloneElement(skill, {
-                className: "text-6xl text-neutral-100",
-              })}
-            </div>
-          ))}
-        </div>
-        <div className=" inline-block animate-scroll">
-          {skills.map((skill, index) => (
-            <div key={index} className="inline-block mx-8 md:mx-10 lg:mx-12">
-              {React.cloneElement(skill, {
-                className: "text-6xl text-neutral-100",
-              })}
+      <div className="max-w-5xl m-auto px-6">
+        <div className="flex justify-between items-center">
+          {visibleIcons.map((skill, index) => (
+            <div
+              key={index}
+              className="text-6xl md:text-7xl lg:text-8xl from-neutral-100 transition-all"
+            >
+              {skill}
             </div>
           ))}
         </div>
