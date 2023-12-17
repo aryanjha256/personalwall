@@ -33,7 +33,7 @@ const Hero = () => {
   return (
     <div className="flex flex-col items-center pt-20 lg:pt-24">
       <div className="py-8 text-sm text-gray-300">
-        <span className="font-mono" data-value="HI, I'M ARYAN">
+        <span className="font-hero" data-value="HI, I'M ARYAN">
           HI, I'M ARYAN
         </span>
       </div>

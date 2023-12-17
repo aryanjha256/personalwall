@@ -12,6 +12,9 @@ export default {
           to: { transform: "translateX(-100%)" },
         },
       },
+      fontFamily: {
+        hero: ["Space Mono", "monospace"],
+      },
     },
   },
   plugins: [],
